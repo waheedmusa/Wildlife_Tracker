@@ -1,0 +1,32 @@
+body{
+font-family: 'Poppins', sans-serif;
+background-image: url("/images/forest.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.head1{
+padding-left: 13%;
+font-size: 100px;
+}
+.title1{
+padding-left: 13%;
+font-size: 60px;
+}
+.link1{
+font-size: 50px;
+color: gray;
+}
+.link2{
+font-size: 50px;
+color: gray;
+padding-left: 37%;
+}
+a {
+ color: gray;
+}
+a:hover {
+ color: black;
+}
+.row1{
+padding-top: 25%;
+}
