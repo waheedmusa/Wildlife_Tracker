@@ -1,18 +1,21 @@
 package models;
 
+import java.sql.Connection;
+import java.util.List;
+
 public class EndangeredAnimal {
 
-    private String name;
     private int id;
+    private String name;
     private String health;
     private String age;
     private String location;
     private String ranger;
 
-    public EndangeredAnimal(String name, int id, String health, String age, String location, String ranger){
+    public EndangeredAnimal(String name, String health, String age, String location, String ranger) {
 
-        this.name = name;
         this.id = id;
+        this.name = name;
         this.health = health;
         this.age = age;
         this.location = location;
@@ -23,16 +26,16 @@ public class EndangeredAnimal {
         return name;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public String getHealth() {
         return health;
     }
 
     public String getAge() {
         return age;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLocation() {
@@ -42,4 +45,6 @@ public class EndangeredAnimal {
     public String getRanger() {
         return ranger;
     }
+
+
 }

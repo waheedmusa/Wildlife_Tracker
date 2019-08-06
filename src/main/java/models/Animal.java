@@ -1,26 +1,30 @@
 package models;
 
+import java.sql.Connection;
+import java.util.List;
+
 public class Animal {
 
-    private String name;
     private int id;
+    private String name;
     private String location;
     private String ranger;
 
-    public Animal(String name, int id, String location, String ranger){
-        this.name = name;
+    public Animal(String name, String location, String ranger){
         this.id = id;
+        this.name = name;
         this.location = location;
         this.ranger = ranger;
-
     }
+
+
 
     public String getName() {
         return name;
     }
 
-    public int getId() {
-        return id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLocation() {
@@ -30,4 +34,18 @@ public class Animal {
     public String getRanger() {
         return ranger;
     }
+
+    @Override
+    public boolean equals(Object otherAnimal) {
+        if (!(otherAnimal instanceof Animal)) {
+            return false;
+        } else {
+            Animal newAnimal = (Animal) otherAnimal;
+            return this.getName().equals(newAnimal.getName()) &&
+                    this.getLocation() == newAnimal.getLocation()&&
+                    this.getRanger() == newAnimal.getRanger();
+        }
+    }
+
+
 }

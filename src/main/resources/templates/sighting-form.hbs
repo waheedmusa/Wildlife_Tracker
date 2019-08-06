@@ -1,9 +1,11 @@
 <!--form.hbs.-->
 {{#partial "content"}}
-    <h1 class="title1"><u>What animal did you spot?</u></h1><br>
+    <h1 class="title1"><u>What animal did you spot?</u></h1><br><br>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <div class="thumbnail">
+                <center>
                 <h3><u>Non-endangered Animal</u></h3>
                 <form class="forming" action='/sighting_success'>
                     <div class="form-group">
@@ -20,8 +22,12 @@
                     </div>
                     <button type="submit" class="btn btn-secondary">Submit Form</button>
                 </form>
+                </center>
+                </div>Samora Yommie
             </div>
             <div class="col-md-6">
+                <div class="thumbnail">
+                <center>
                 <h3><u>Endangered Animal</u></h3>
                 <form class="forming" action='/sighting_success'>
                     <div class="form-group">
@@ -30,15 +36,27 @@
                     </div>
                     <div class="form-group">
                         <label for="health">Animal Health</label>
-                        <input id="health" name="health" class="form-control" type="text">
+                        <select name="health">
+                            <option>Sick</option>
+                            <option>Okay</option>
+                            <option>Healthy</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="age">Animal Age</label>
-                        <input id="age" name="age" class="form-control" type="text">
+                        <select name="age">
+                            <option>Newborn</option>
+                            <option>Young</option>
+                            <option>Adult</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="location">Location Sighted</label>
-                        <input id="location" name="location" class="form-control" type="text">
+                        <select name="age">
+                            <option>Zone A</option>
+                            <option>Zone B</option>
+                            <option>Zone C</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="ranger">Your Name</label>
@@ -46,6 +64,8 @@
                     </div>
                     <button type="submit" class="btn btn-secondary">Submit Form</button>
                 </form>
+                </center>
+                </div>
             </div>
         </div>
     </div>
