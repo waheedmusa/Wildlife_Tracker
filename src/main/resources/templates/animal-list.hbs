@@ -4,12 +4,19 @@
         <div class="row">
             <div class="col-md-6">
                 <h3><u>Non-endangered Animals</u></h3>
+                <div class="thumbnail">
+                    <center>
+                        <h4>Animal: Lion</h4>
+                        <h4>Location: Zone A</h4>
+                        <h4>Ranger Name: Dwight</h4>
+                    </center>
+                </div>
                 {{#each Animals}}
                 <div class="thumbnail">
                     <center>
-                        <h4>{{ name }}</h4>
-                        <h4>{{ location }}</h4>
-                        <h4>{{ ranger }}</h4>
+                        <h4>Animal: {{ name }}</h4>
+                        <h4>Location: {{ location }}</h4>
+                        <h4>Ranger Name: {{ ranger }}</h4>
                     </center>
                 </div>
                 {{/each}}
@@ -17,14 +24,23 @@
 
             <div class="col-md-6">
                 <h3><u>Endangered Animals</u></h3>
+                <div class="thumbnail">
+                    <center>
+                        <h4>Animal: Rhino</h4>
+                        <h4>Health: Okay</h4>
+                        <h4>Age: Adult</h4>
+                        <h4>Location: Zone B</h4>
+                        <h4>Ranger Name: Michael</h4>
+                    </center>
+                </div>
     {{#each Animals}}
                 <div class="thumbnail">
                     <center>
-                        <h4>{{ name }}</h4>
-                        <h4>{{ health }}</h4>
-                        <h4>{{ age }}</h4>
-                        <h4>{{ location }}</h4>
-                        <h4>{{ ranger }}</h4>
+                        <h4>Animal: {{ name }}</h4>
+                        <h4>Health: {{ health }}</h4>
+                        <h4>Age: {{ age }}</h4>
+                        <h4>Location: {{ location }}</h4>
+                        <h4>Ranger Name: {{ ranger }}</h4>
                     </center>
                 </div>
     {{/each}}
